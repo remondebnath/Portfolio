@@ -1,0 +1,146 @@
+body{
+	font-family: 'Alkatra', cursive;
+	color: #0c0c57;
+	background-color: #d9e0fb;
+}
+h1,h2,h3,h4{
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	max-width: 1080px;
+	margin:0 auto;
+}
+.container>div{
+	margin: 20px auto;
+}
+.navigation-bar{
+	text-align: center;
+}
+.intro{
+	text-align: center;
+}
+#my-name{
+	
+	font-size: 4-0px;
+}
+.aboutgrid{
+	display: grid ;
+	grid-template-columns: 50% 50%;
+
+}
+.about-list{
+	text-align: center;
+	 list-style: none ;
+
+}
+.i-am,.to-do{
+	text-align: center;
+}
+@media (max-width:480px){
+	.aboutgrid{
+		grid-template-columns: 100%; 
+	}
+}
+
+.project-heading {
+	text-align: center;
+}
+.imgrid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	
+}
+
+
+	
+.img-grid-wrapper{
+	justify-self: center;
+	padding: 4%;
+	position: relative;
+}
+
+.portfolio-img{
+	border-radius:5px;
+	box-shadow: 0 0 4px 0 rgba(36, 48, 180, 1.0);
+	transition: all ease-in-out .5s;
+
+}
+
+.portfolio-img:hover{
+	filter:brightness(75%);
+	box-shadow: 0 0 6px 0 rgba(36, 48, 180, 1.0);
+
+
+}
+.img-grid-wrapper>h4{
+	position: absolute ;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 2;
+	color: white;
+	visibility: hidden;
+	
+}
+.img-grid-wrapper:hover>h4{
+	visibility: visible;
+}
+
+@media(max-width:850px){
+	.imgrid{
+		grid-template-columns: 100%;
+	}
+}
+.links-contacts{
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+.links{
+	justify-self: center;
+}
+.links-list{
+	list-style: none;
+	padding: 0;
+}
+.footer{
+	justify-self: center;
+}
+@media (max-width:650px){
+	.links-contacts{
+		grid-template-columns: 100%;
+	}
+}
+
+.profile{
+	border-radius:50%;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0 0 8px 0 rgba(36, 48, 180,.5) ;
+	transition: all ease-in-out .2s;
+
+}
+.profile:hover{
+box-shadow:0 0 10px 0 rgba(36, 48, 180,.8) ;	
+width: ;
+height: ;
+
+}
+
+form input,textarea{
+	padding: 4px;
+	border-radius: 4px;
+	width: 240px;
+}
+input[type="submit"]{
+	width: 250px;
+	background-color: rgb(80, 120, 180);
+}
+.button-wrapper{
+	margin: 20px 0;
+}
+hr{
+	border: 0;
+	height: 2px;
+	background-image: linear-gradient(to right ,rgba(0, 0, 0,0) ,rgba(0, 0, 0, .5) ,rgba(0, 0, 0, 0)) ;
+}
